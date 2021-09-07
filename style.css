@@ -10,6 +10,7 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 nav li {
+  display: flex;
   list-style: none;
 }
 .bestsellers1,
