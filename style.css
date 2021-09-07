@@ -23,3 +23,18 @@ nav li {
   display: grid;
   grid-column: 2/3;
 }
+
+article a:hover {
+  animation: glow 1s infinite;
+  opacity: 100%;
+}
+@keyframes glow {
+  0%,
+  100% {
+    filter: brightness(100%) drop-shadow(0 0 -1px hotpink);
+  }
+
+  50% {
+    filter: brightness(110%) drop-shadow(0 0 40px hotpink);
+  }
+}
