@@ -1,0 +1,11 @@
+main {
+  display: grid;
+}
+.division-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.division-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
