@@ -9,3 +9,16 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+nav li {
+  list-style: none;
+}
+.bestsellers1,
+.bestsellers3 {
+  display: grid;
+  grid-column: 1/2;
+}
+.bestsellers2,
+.bestsellers4 {
+  display: grid;
+  grid-column: 2/3;
+}
