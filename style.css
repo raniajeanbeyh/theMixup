@@ -1,14 +1,48 @@
+:root {
+  --color-1: #5b647d;
+  --color-2: #ffa6c1;
+  --color-3: #99d98c;
+  --color-4: #90caf9;
+  --color-5: #ffee99;
+
+  --primary-font: "Klee One",
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  color: var(--color-1);
+  padding: 5px;
+}
+
+header a:hover {
+  color: white;
+  border-radius: 10px;
+}
+
+header li:first-child a:hover {
+  background-color: none;
+}
+
+header li:nth-child(2) a:hover {
+  background-color: var(--color-2);
+}
+
+header li:nth-child(3) a:hover {
+  background-color: var(--color-4);
+}
+
+header li:last-child a:hover {
+  background-color: var(--color-3);
+}
+
 header nav ul {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
-
-}
-
-a {
-  text-decoration: none;
-
 }
 
 header nav li:first-child {
