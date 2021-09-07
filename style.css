@@ -1,9 +1,12 @@
 main {
   display: grid;
+  align-items: center;
+  justify-content: center;
 }
 .division-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 .division-2 {
   display: grid;
@@ -15,17 +18,16 @@ nav li {
 }
 .bestsellers1,
 .bestsellers3 {
-  display: grid;
   grid-column: 1/2;
 }
 .bestsellers2,
 .bestsellers4 {
-  display: grid;
   grid-column: 2/3;
 }
 
 article a:hover {
   animation: glow 1s infinite;
+
   opacity: 100%;
 }
 @keyframes glow {
@@ -33,8 +35,33 @@ article a:hover {
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px hotpink);
   }
-
   50% {
     filter: brightness(110%) drop-shadow(0 0 40px hotpink);
   }
+}
+
+.best-sellers1 {
+  box-shadow: brown;
+}
+.best-sellers2 {
+  box-shadow: green;
+}
+.best-sellers3 {
+  box-shadow: palevioletred;
+}
+.best-sellers4 {
+  box-shadow: black;
+}
+.main-images {
+  width: 22vw;
+  height: 40vw;
+}
+.Recipes {
+  grid-column: 1/2;
+}
+.Utilities {
+  grid-column: 2/3;
+}
+.Frostings {
+  grid-column: 3/4;
 }
