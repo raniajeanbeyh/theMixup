@@ -1,25 +1,63 @@
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+a {
+  text-decoration: none;
+
+}
+
+header nav li:first-child {
+  margin-right: auto;
+}
+
+header nav li:last-child {
+  margin-right: 2rem;
+}
+
+header nav img {
+  width: 12vw;
+}
+
+
+
+
 main {
   display: grid;
 }
+
 .division-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .division-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 nav li {
   display: flex;
   list-style: none;
 }
+
 .bestsellers1,
 .bestsellers3 {
   display: grid;
   grid-column: 1/2;
 }
+
 .bestsellers2,
 .bestsellers4 {
   display: grid;
   grid-column: 2/3;
+}
+
+article a:hover {
+  animation: glow 1s infinite;
+  opacity: 100%;
 }
