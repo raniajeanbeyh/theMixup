@@ -94,15 +94,17 @@ nav li {
 
 article a:hover {
   animation: glow 1s infinite;
-<<<<<<< HEAD
-
   opacity: 100%;
+
 }
+
 @keyframes glow {
+
   0%,
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px hotpink);
   }
+
   50% {
     filter: brightness(110%) drop-shadow(0 0 40px hotpink);
   }
@@ -111,29 +113,32 @@ article a:hover {
 .best-sellers1 {
   box-shadow: brown;
 }
+
 .best-sellers2 {
   box-shadow: green;
 }
+
 .best-sellers3 {
   box-shadow: palevioletred;
 }
+
 .best-sellers4 {
   box-shadow: black;
 }
+
 .main-images {
   width: 22vw;
   height: 40vw;
 }
-.Recipes {
+
+.recipes {
   grid-column: 1/2;
 }
-.Utilities {
+
+.utilities {
   grid-column: 2/3;
 }
-.Frostings {
+
+.frostings {
   grid-column: 3/4;
 }
-=======
-  opacity: 100%;
-}
->>>>>>> origin/header
