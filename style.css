@@ -1,45 +1,134 @@
+:root {
+  --color-1: #5b647d;
+  --color-2: #ffa6c1;
+  --color-3: #99d98c;
+  --color-4: #90caf9;
+  --color-5: #ffee99;
+
+  --primary-font: "Klee One", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  color: var(--color-1);
+  padding: 5px;
+}
+.front-page-title {
+  grid-column: 1/3;
+}
+header a:hover {
+  color: white;
+  border-radius: 10px;
+}
+
+header li:first-child a:hover {
+  background-color: none;
+}
+
+header li:nth-child(2) a:hover {
+  background-color: var(--color-2);
+}
+
+header li:nth-child(3) a:hover {
+  background-color: var(--color-4);
+}
+
+header li:last-child a:hover {
+  background-color: var(--color-3);
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav li:first-child {
+  margin-right: auto;
+}
+
+header nav li:last-child {
+  margin-right: 2rem;
+}
+
+header nav img {
+  width: 12vw;
+}
+
 main {
   display: grid;
   align-items: center;
   justify-content: center;
 }
+
 .division-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 }
+
 .division-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 nav li {
   display: flex;
   list-style: none;
 }
-.bestsellers1,
-.bestsellers3 {
+
+.best-sellers1,
+.best-sellers3 {
   grid-column: 1/2;
 }
-.bestsellers2,
-.bestsellers4 {
+
+.best-sellers2,
+.best-sellers4 {
   grid-column: 2/3;
 }
 
-article a:hover {
-  animation: glow 1s infinite;
-
-  opacity: 100%;
+article a.glow1:hover {
+  animation: glow-c1 1s infinite;
+  opacity: 0.6;
 }
-@keyframes glow {
+@keyframes glow-c1 {
   0%,
   100% {
-    filter: brightness(100%) drop-shadow(0 0 -1px hotpink);
+    filter: brightness(100%) drop-shadow(0 0 -1px #ffa6c1);
   }
   50% {
-    filter: brightness(110%) drop-shadow(0 0 40px hotpink);
+    filter: brightness(110%) drop-shadow(0 0 40px #ffa6c1);
   }
 }
-
+article a.glow2:hover {
+  animation: glow-c2 1s infinite;
+  opacity: 0.6;
+}
+@keyframes glow-c2 {
+  0%,
+  100% {
+    filter: brightness(100%) drop-shadow(0 0 -1px #90caf9);
+  }
+  50% {
+    filter: brightness(110%) drop-shadow(0 0 40px #90caf9);
+  }
+}
+article a.glow3:hover {
+  animation: glow-c3 1s infinite;
+  opacity: 0.6;
+}
+@keyframes glow-c3 {
+  0%,
+  100% {
+    filter: brightness(100%) drop-shadow(0 0 -1px #99d98c);
+  }
+  50% {
+    filter: brightness(110%) drop-shadow(0 0 40px #99d98c);
+  }
+}
 .best-sellers1 {
   box-shadow: brown;
 }
@@ -55,6 +144,10 @@ article a:hover {
 .main-images {
   width: 22vw;
   height: 40vw;
+}
+.other-pics {
+  width: 27vw;
+  height: 13vw;
 }
 .Recipes {
   grid-column: 1/2;
