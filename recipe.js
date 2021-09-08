@@ -38,6 +38,10 @@ function handleData(cakes) {
 
         myClone.querySelector("p.ingredients").innerHTML = cake.ingredients;
         myClone.querySelector("p.instructions").innerHTML = cake.instructions;
+
+        // myClone.querySelector("p.toppings").innerHTML = cake.toppingTechniques;
+        // myClone.querySelector("p.toppingsIng").innerHTML = cake.toppingsIngredients;
+        // myClone.querySelector("p.utilities").innerHTML = cake.utilities;
         // append to DOM
         document.querySelector("main").appendChild(myClone);
     });
