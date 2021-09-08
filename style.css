@@ -75,6 +75,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  padding-top: 2em;
 }
 .recipe-division {
   display: grid;
@@ -93,10 +94,7 @@ nav li {
 
 .best-sellers2,
 .best-sellers4 {
-  display: grid;
   grid-column: 2/3;
-  align-items: flex-end;
-  justify-content: flex-end;
 }
 .Recipes {
   grid-column: 1/2;
