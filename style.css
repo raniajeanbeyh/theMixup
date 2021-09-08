@@ -17,6 +17,10 @@ a {
   padding: 5px;
 }
 
+p {
+  font-family: var(--primary-font);
+}
+
 header a:hover {
   color: white;
   border-radius: 10px;

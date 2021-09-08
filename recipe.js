@@ -1,4 +1,4 @@
-const urlParams = new URLSearchParams(window.location.search);
+// const urlParams = new URLSearchParams(window.location.search);
 const url = "https://kea2021-e819.restdb.io/rest/cake-baking?max=4";
 
 // THE API key
@@ -25,11 +25,20 @@ fetch(url, options)
 
 function handleData(cakes) {
     cakes.forEach((cake) => {
-        // console.log(cake);
+        console.log(cake);
         // make a template
         // grab it
+        const myTemplate = document.querySelector("template").content;
         // clone it
+        const myClone = myTemplate.cloneNode(true);
         // populate with data
+        myClone.querySelector("h2").textContent = cake.name;
+
+        // myClone.querySelector("img").src = `https://kea2021-e819.restdb.io/rest/cake-baking`;
+
+        myClone.querySelector("p.ingredients").innerHTML = cake.ingredients;
+        myClone.querySelector("p.instructions").innerHTML = cake.instructions;
         // append to DOM
+        document.querySelector("main").appendChild(myClone);
     });
 }
