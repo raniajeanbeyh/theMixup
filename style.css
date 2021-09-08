@@ -76,6 +76,10 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+.recipe-division {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 nav li {
   display: flex;
@@ -94,7 +98,15 @@ nav li {
   align-items: flex-end;
   justify-content: flex-end;
 }
-
+.Recipes {
+  grid-column: 1/2;
+}
+.Utilities {
+  grid-column: 2/3;
+}
+.Frostings {
+  grid-column: 3/4;
+}
 article a.glow1:hover {
   animation: glow-c1 1s infinite;
   opacity: 0.6;
@@ -137,7 +149,6 @@ article a.glow3:hover {
     filter: brightness(110%) drop-shadow(0 0 40px #99d98c);
   }
 }
-
 .main-images {
   width: 22vw;
   height: 40vw;
@@ -162,12 +173,13 @@ article a.glow3:hover {
   height: 13vw;
   box-shadow: -9px 9px #ffee99;
 }
-.Recipes {
+
+.cake-pic {
   grid-column: 1/2;
 }
-.Utilities {
+.ingredients {
   grid-column: 2/3;
 }
-.Frostings {
-  grid-column: 3/4;
+.instructions {
+  grid-column: 1/3;
 }
