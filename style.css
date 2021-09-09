@@ -40,6 +40,7 @@ figcaption {
 .ing {
   font-family: "WindSong", cursive;
 }
+
 .ingredients,
 .utilities-di,
 .frosting-di {
@@ -47,10 +48,12 @@ figcaption {
   margin-left: 1.5rem;
   background-color: #efe6f3;
 }
+
 .how-to {
   grid-column: 1/3;
   margin-top: 5rem;
 }
+
 .image-fetched {
   grid-column: 1/2;
   display: block;
@@ -74,15 +77,18 @@ figcaption {
 .toppings {
   grid-column: 1/3;
 }
+
 .recipes,
 .cake-pic,
 .best-sellers1,
 .best-sellers3 {
   grid-column: 1/2;
 }
+
 .copy-right {
   grid-column: 1/3;
 }
+
 .utilities {
   grid-column: 2/3;
   font-family: "Klee One", sans-serif;
@@ -95,6 +101,7 @@ figcaption {
 .hidden {
   visibility: hidden;
 }
+
 p {
   font-family: var(--primary-font);
 }
@@ -169,6 +176,7 @@ nav li {
   display: flex;
   list-style: none;
 }
+
 p.hi {
   margin-top: -190px;
   color: white;
@@ -185,6 +193,7 @@ article a.glow1:hover {
 }
 
 @keyframes glow-c1 {
+
   0%,
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px #ffa6c1);
@@ -205,6 +214,7 @@ section a:hover {
 }
 
 @keyframes glow-c2 {
+
   0%,
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px #90caf9);
@@ -221,6 +231,7 @@ article a.glow3:hover {
 }
 
 @keyframes glow-c3 {
+
   0%,
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px #99d98c);
@@ -268,4 +279,8 @@ footer {
   color: white;
   padding: 1.5rem;
   font-size: 1.4rem;
+}
+
+.title {
+  text-align: center;
 }
