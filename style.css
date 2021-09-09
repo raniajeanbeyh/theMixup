@@ -243,3 +243,13 @@ article a.glow3:hover {
 .hidden {
   visibility: hidden;
 }
+
+footer {
+  margin-top: 5rem;
+  background-color: var(--color-1);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.4rem;
+}
