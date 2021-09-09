@@ -163,6 +163,7 @@ main {
   grid-template-columns: 1fr 1fr;
   margin-left: 12rem;
   margin-right: 12rem;
+  margin-top: 5rem;
 }
 
 nav li {
@@ -172,6 +173,26 @@ nav li {
 p.hi {
   margin-top: -190px;
   color: white;
+}
+
+.glow a {
+  display: grid;
+}
+.glow a * {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.glow a p {
+  z-index: 100;
+  background-color: red;
+  opacity: 0.7;
+  align-self: start;
+  justify-self: start;
+}
+
+.glow:hover a p {
+  background-color: green;
 }
 
 article a:hover {
