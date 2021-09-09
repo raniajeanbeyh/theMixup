@@ -25,20 +25,25 @@ fetch(url, options)
 
 function handleData(cakes) {
     cakes.forEach((cake) => {
-        console.log(cake);
+        // console.log(cake);
         // make a template
         // grab it
-        const myTemplate = document.querySelector("template").content;
-        // clone it
-        const myClone = myTemplate.cloneNode(true);
-        // populate with data
-        myClone.querySelector("h2").textContent = cake.name;
-        myClone.querySelector("img").src = cake.image;
-        myClone.querySelector("p.toppings").innerHTML = cake.toppingsTechniques;
-        myClone.querySelector("p.toppingsIng").innerHTML = cake.toppingsIngredients;
-        myClone.querySelector("a").textContent = cake.source;
+        if (cake.toppingsTechniques) {
 
-        // append to DOM
-        document.querySelector("main").appendChild(myClone);
+
+            const myTemplate = document.querySelector("template").content;
+            // clone it
+            const myClone = myTemplate.cloneNode(true);
+            // populate with data
+            myClone.querySelector("h2").textContent = cake.name;
+            myClone.querySelector("img").src = cake.image;
+            myClone.querySelector("p.toppings").innerHTML = cake.toppingsTechniques;
+            myClone.querySelector("p.toppingsIng").innerHTML = cake.toppingsIngredients;
+            myClone.querySelector("a").textContent = cake.source;
+            // console.log(cake.toppingsTechniques);
+
+            // append to DOM
+            document.querySelector("main").appendChild(myClone);
+        }
     });
 }
