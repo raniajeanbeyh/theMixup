@@ -33,12 +33,10 @@ function handleData(cakes) {
         const myClone = myTemplate.cloneNode(true);
         // populate with data
         myClone.querySelector("h2").textContent = cake.name;
-
-        // myClone.querySelector("img").src = `https://kea2021-e819.restdb.io/rest/cake-baking`;
-
+        myClone.querySelector("img").src = cake.image;
         myClone.querySelector("p.ingredients").innerHTML = cake.ingredients;
         myClone.querySelector("p.instructions").innerHTML = cake.instructions;
-
+        myClone.querySelector("a").textContent = cake.source;
         // myClone.querySelector("p.toppings").innerHTML = cake.toppingTechniques;
         // myClone.querySelector("p.toppingsIng").innerHTML = cake.toppingsIngredients;
         // myClone.querySelector("p.utilities").innerHTML = cake.utilities;
