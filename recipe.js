@@ -1,5 +1,5 @@
 // const urlParams = new URLSearchParams(window.location.search);
-const url = "https://kea2021-e819.restdb.io/rest/cake-baking?max=4";
+let url = "https://kea2021-e819.restdb.io/rest/cake-baking?max=4";
 
 // THE API key
 const options = {
@@ -7,6 +7,16 @@ const options = {
         "x-apikey": "6137297443cedb6d1f97eda8",
     },
 };
+
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+console.log(id);
+if (id) {
+    url = "https://kea2021-e819.restdb.io/rest/cake-baking/" + id;
+    console.log(url);
+}
+// const url = "https://kea2021-e819.restdb.io/rest/cake-baking/" + id;
+
 
 fetch(url, options)
     .then((response) => {
