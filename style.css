@@ -115,20 +115,6 @@ p.hi {
 article a:hover {
   animation: glow 1s infinite;
   opacity: 100%;
-
-}
-
-.Recipes {
-  grid-column: 1/2;
-}
-
-.Utilities {
-  grid-column: 2/3;
-
-}
-
-.Frostings {
-  grid-column: 3/4;
 }
 
 article a.glow1:hover {
@@ -137,7 +123,6 @@ article a.glow1:hover {
 }
 
 @keyframes glow-c1 {
-
   0%,
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px #ffa6c1);
@@ -158,7 +143,6 @@ section a:hover {
 }
 
 @keyframes glow-c2 {
-
   0%,
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px #90caf9);
@@ -175,7 +159,6 @@ article a.glow3:hover {
 }
 
 @keyframes glow-c3 {
-
   0%,
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px #99d98c);
