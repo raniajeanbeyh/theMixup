@@ -8,6 +8,11 @@
   --primary-font: "Klee One", sans-serif;
 }
 
+header {
+  background-image: url(img/bcg.png);
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   font-family: var(--primary-font);
