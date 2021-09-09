@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toppings</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="img/logo.png" alt="cupcake logo"></a></li>
-                <li><a href="recipe.html">Recipes</a></li>
-                <li><a href="utilities.html">Utilities</a></li>
-                <li><a href="frostings.html">Toppings</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img src="img/logo.png" alt="cupcake logo"
+            /></a>
+          </li>
+          <li><a href="recipe.html">Recipes</a></li>
+          <li><a href="utilities.html">Utilities</a></li>
+          <li><a href="frostings.html">Toppings</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <template>
-            <div class="recipe-division">
-                <h2>name</h2>
-                <img src="" alt="" />
-                <h3>Topping techniques:</h3>
-                <p class="toppings"></p>
-                <h3>Topping ingredients:</h3>
-                <p class="toppingsIng"></p>
-                <a href="#">source</a>
-            </div>
-        </template>
+      <template>
+        <div class="recipe-division">
+          <div class="pic-title">
+            <h2 class="desert-name">name</h2>
+            <img src="" alt="" class="image-fetched" />
+          </div>
+          <div class="frosting-di">
+            <h3>Topping ingredients:</h3>
+            <p class="toppingsIng"></p>
+          </div>
+          <h3 class="techniques">Topping techniques:</h3>
+          <p class="toppings"></p>
+          <a href="#" class="creds">source</a>
+        </div>
+      </template>
     </main>
     <footer>&copy;kea 2021</footer>
     <script src="frostings.js"></script>
-</body>
-
+  </body>
 </html>
