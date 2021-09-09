@@ -30,18 +30,71 @@ figcaption {
   font-size: 20px;
 }
 
-.desert-name {
-  grid-column: 1/3;
+.pic-title {
+  grid-column: 1/2;
+  font-family: "WindSong", cursive;
+  text-align: center;
+  margin-top: 2rem;
 }
 
+.ing {
+  font-family: "WindSong", cursive;
+}
+.ingredients,
+.utilities-di,
+.frosting-di {
+  grid-column: 2/3;
+  margin-left: 1.5rem;
+  background-color: #efe6f3;
+}
+.how-to {
+  grid-column: 1/3;
+  margin-top: 5rem;
+}
+.image-fetched {
+  grid-column: 1/2;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.best-sellers2,
+.best-sellers4,
 .ingredients {
   grid-column: 2/3;
 }
 
-.image-fetched {
-  grid-column: 1/2;
+.Frostings {
+  grid-column: 3/4;
 }
 
+.instructions,
+.techniques,
+.creds,
+.toppings {
+  grid-column: 1/3;
+}
+.recipes,
+.cake-pic,
+.best-sellers1,
+.best-sellers3 {
+  grid-column: 1/2;
+}
+.copy-right {
+  grid-column: 1/3;
+}
+.utilities {
+  grid-column: 2/3;
+  font-family: "Klee One", sans-serif;
+}
+
+.frostings {
+  grid-column: 3/4;
+}
+
+.hidden {
+  visibility: hidden;
+}
 p {
   font-family: var(--primary-font);
 }
@@ -108,26 +161,17 @@ main {
 .recipe-division {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-left: 12rem;
+  margin-right: 12rem;
 }
 
 nav li {
   display: flex;
   list-style: none;
 }
-
-.best-sellers1,
-.best-sellers3 {
-  grid-column: 1/2;
-}
-
 p.hi {
   margin-top: -190px;
   color: white;
-}
-
-.best-sellers2,
-.best-sellers4 {
-  grid-column: 2/3;
 }
 
 article a:hover {
@@ -141,7 +185,6 @@ article a.glow1:hover {
 }
 
 @keyframes glow-c1 {
-
   0%,
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px #ffa6c1);
@@ -162,7 +205,6 @@ section a:hover {
 }
 
 @keyframes glow-c2 {
-
   0%,
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px #90caf9);
@@ -179,7 +221,6 @@ article a.glow3:hover {
 }
 
 @keyframes glow-c3 {
-
   0%,
   100% {
     filter: brightness(100%) drop-shadow(0 0 -1px #99d98c);
@@ -217,38 +258,6 @@ article a.glow3:hover {
   width: 27vw;
   height: 13vw;
   box-shadow: -9px 9px #ffee99;
-}
-
-.cake-pic {
-  grid-column: 1/2;
-}
-
-.ingredients {
-  grid-column: 2/3;
-}
-
-.Frostings {
-  grid-column: 3/4;
-}
-
-.instructions {
-  grid-column: 1/3;
-}
-
-.recipes {
-  grid-column: 1/2;
-}
-
-.utilities {
-  grid-column: 2/3;
-}
-
-.frostings {
-  grid-column: 3/4;
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 footer {
