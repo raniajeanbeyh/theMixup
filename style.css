@@ -78,7 +78,8 @@ figcaption {
   grid-column: 3/4;
 }
 .techniques,
-.topping-f {
+.topping-f,
+.utilities-hd {
   font-family: "WindSong", cursive;
   font-size: 30px;
   font-weight: 60;
@@ -195,23 +196,22 @@ nav li {
   display: flex;
   list-style: none;
 }
-p.hi {
-  margin-top: -190px;
-  color: white;
-}
 
 .glow a,
-.glow-u a {
+.glow-u a,
+.glow-f a {
   display: grid;
 }
 .glow a *,
-.glow-u a * {
+.glow-u a *,
+.glow-f a * {
   grid-row: 1/-1;
   grid-column: 1/-1;
 }
 
 .glow a p,
-.glow-u a p {
+.glow-u a p,
+.glow-f a p {
   z-index: 100;
   opacity: 0;
   align-self: start;
@@ -220,18 +220,24 @@ p.hi {
 
 .glow:hover a p {
   padding-top: 15rem;
-  padding-left: 7rem;
-  color: black;
+  padding-left: 6rem;
+  color: white;
   opacity: 1;
-  font-size: 20px;
+  font-size: 28px;
 }
-
+.glow-f:hover a p {
+  padding-top: 15rem;
+  padding-left: 6rem;
+  color: white;
+  opacity: 1;
+  font-size: 28px;
+}
 .glow-u:hover a p {
   padding-top: 15rem;
-  padding-left: 3rem;
-  color: black;
+  padding-left: 1rem;
+  color: white;
   opacity: 1;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 article a:hover {
