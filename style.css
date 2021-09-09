@@ -28,6 +28,15 @@ a {
 figcaption {
   font-size: 20px;
 }
+.desert-name {
+  grid-column: 1/3;
+}
+.ingredients {
+  grid-column: 2/3;
+}
+.image-fetched {
+  grid-column: 1/2;
+}
 p {
   font-family: var(--primary-font);
 }
