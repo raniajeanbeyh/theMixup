@@ -35,10 +35,13 @@ figcaption {
   font-family: "WindSong", cursive;
   text-align: center;
   margin-top: 2rem;
+  font-weight: 60;
 }
 
 .ing {
   font-family: "WindSong", cursive;
+  font-weight: 60;
+  font-size: 25px;
 }
 
 .ingredients,
@@ -51,7 +54,10 @@ figcaption {
 
 .how-to {
   grid-column: 1/3;
+  font-family: "WindSong", cursive;
+  font-size: 30px;
   margin-top: 5rem;
+  font-weight: 60;
 }
 
 .image-fetched {
@@ -67,8 +73,22 @@ figcaption {
   grid-column: 2/3;
 }
 
+.link-sr {
+  font-family: "WindSong", cursive;
+  font-size: 30px;
+  font-weight: 60;
+}
+
 .Frostings {
   grid-column: 3/4;
+}
+
+.techniques,
+.topping-f,
+.utilities-hd {
+  font-family: "WindSong", cursive;
+  font-size: 30px;
+  font-weight: 60;
 }
 
 .instructions,
@@ -85,6 +105,11 @@ figcaption {
   grid-column: 1/2;
 }
 
+.best-sellers3,
+.best-sellers4 {
+  margin-top: 2rem;
+}
+
 .copy-right {
   grid-column: 1/3;
 }
@@ -96,6 +121,10 @@ figcaption {
 
 .frostings {
   grid-column: 3/4;
+}
+
+.desert-name {
+  font-size: 33px;
 }
 
 .hidden {
@@ -117,14 +146,17 @@ header li:first-child a:hover {
 
 header li:nth-child(2) a:hover {
   background-color: var(--color-2);
+  padding: 0.5rem 0.7rem;
 }
 
 header li:nth-child(3) a:hover {
   background-color: var(--color-4);
+  padding: 0.5rem 0.7rem;
 }
 
 header li:last-child a:hover {
   background-color: var(--color-3);
+  padding: 0.5rem 0.7rem;
 }
 
 header nav ul {
@@ -150,19 +182,20 @@ main {
   display: grid;
   align-items: center;
   justify-content: center;
+  gap: 9rem;
 }
 
 .division-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
+  padding: 2.5rem;
 }
 
 .division-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding-top: 2em;
+  padding-left: 7rem;
 }
 
 .recipe-division {
@@ -170,6 +203,7 @@ main {
   grid-template-columns: 1fr 1fr;
   margin-left: 12rem;
   margin-right: 12rem;
+  margin-top: 5rem;
 }
 
 nav li {
@@ -177,9 +211,50 @@ nav li {
   list-style: none;
 }
 
-p.hi {
-  margin-top: -190px;
+.glow a,
+.glow-u a,
+.glow-f a {
+  display: grid;
+}
+
+.glow a *,
+.glow-u a *,
+.glow-f a * {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.glow a p,
+.glow-u a p,
+.glow-f a p {
+  z-index: 100;
+  opacity: 0;
+  align-self: start;
+  justify-self: start;
+}
+
+.glow:hover a p {
+  padding-top: 15rem;
+  padding-left: 6rem;
   color: white;
+  opacity: 1;
+  font-size: 28px;
+}
+
+.glow-f:hover a p {
+  padding-top: 15rem;
+  padding-left: 6rem;
+  color: white;
+  opacity: 1;
+  font-size: 28px;
+}
+
+.glow-u:hover a p {
+  padding-top: 15rem;
+  padding-left: 1rem;
+  color: white;
+  opacity: 1;
+  font-size: 25px;
 }
 
 article a:hover {
@@ -189,7 +264,7 @@ article a:hover {
 
 article a.glow1:hover {
   animation: glow-c1 1s infinite;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 @keyframes glow-c1 {
@@ -274,6 +349,7 @@ article a.glow3:hover {
 footer {
   margin-top: 5rem;
   background-color: var(--color-1);
+  font-family: "Klee One", sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: white;
