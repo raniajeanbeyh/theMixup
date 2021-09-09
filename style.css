@@ -21,6 +21,10 @@ a {
   font-family: "Klee One", sans-serif;
 }
 
+p {
+  font-family: var(--primary-font);
+}
+
 header a:hover {
   color: white;
   border-radius: 10px;
@@ -103,6 +107,7 @@ nav li {
 article a:hover {
   animation: glow 1s infinite;
   opacity: 100%;
+
 }
 
 .Recipes {
@@ -216,4 +221,20 @@ article a.glow3:hover {
 
 .instructions {
   grid-column: 1/3;
+}
+
+.recipes {
+  grid-column: 1/2;
+}
+
+.utilities {
+  grid-column: 2/3;
+}
+
+.frostings {
+  grid-column: 3/4;
+}
+
+.hidden {
+  visibility: hidden;
 }
