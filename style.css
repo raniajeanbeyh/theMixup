@@ -34,6 +34,7 @@ figcaption {
   grid-column: 1/2;
   font-family: "WindSong", cursive;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .ing {
@@ -46,7 +47,10 @@ figcaption {
   margin-left: 1.5rem;
   background-color: #efe6f3;
 }
-
+.how-to {
+  grid-column: 1/3;
+  margin-top: 5rem;
+}
 .image-fetched {
   grid-column: 1/2;
   display: block;
@@ -76,7 +80,9 @@ figcaption {
 .best-sellers3 {
   grid-column: 1/2;
 }
-
+.copy-right {
+  grid-column: 1/3;
+}
 .utilities {
   grid-column: 2/3;
   font-family: "Klee One", sans-serif;
@@ -155,8 +161,8 @@ main {
 .recipe-division {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 9rem;
-  margin-right: 9rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
 }
 
 nav li {
