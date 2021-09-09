@@ -146,3 +146,7 @@ article a:hover {
 .frostings {
   grid-column: 3/4;
 }
+
+.hidden {
+  visibility: hidden;
+}
