@@ -34,7 +34,7 @@ function handleData(cakes) {
         // populate with data
         myClone.querySelector("h2").textContent = cake.name;
         myClone.querySelector("img").src = cake.image;
-        myClone.querySelector("p.ingredients").innerHTML = cake.ingredients;
+        myClone.querySelector("div.ingredients p").innerHTML = cake.ingredients;
         myClone.querySelector("p.instructions").innerHTML = cake.instructions;
         myClone.querySelector("a").textContent = cake.source;
 
